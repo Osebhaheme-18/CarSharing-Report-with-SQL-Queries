@@ -59,14 +59,29 @@ Entity Relationship Diagram (ERD):
                                   
                             [invoices] >── [customers] >── [employees]
                             
-
 [playlists] >──< [playlist_track] >──< [tracks]
+
 
 Key Relationships:
 Parent Table    Child Table    Foreign Key    Relationship
 artists         albums          ArtistId      One-to-Many
 
 All relationships follow standard One-to-Many or Many-to-Many patterns with no circular dependencies.
+## 📊 Data Analysis and SQL Queries
+
+📌 Q1 — Top 10 Artists by Revenue
+Business Question: Which artists generate the most revenue for the store?
+sqlSELECT 
+    ar.Name AS Artist,
+    SUM(ii.Quantity) AS TotalUnitsSold,
+    ROUND(SUM(ii.UnitPrice * ii.Quantity), 2) AS Revenue
+FROM invoice_items ii
+JOIN tracks t ON ii.TrackId = t.TrackId
+JOIN albums al ON t.AlbumId = al.AlbumId
+JOIN artists ar ON al.ArtistId = ar.ArtistId
+GROUP BY ar.Name
+ORDER BY Revenue DESC
+LIMIT 10;
 
 
 
