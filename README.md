@@ -360,8 +360,7 @@ Jane Peacock outperforms peers by $57–$113. Her approach could be documented a
 
 **Your Name**
 📧 youremail@example.com
-🔗 www.linkedin.com/in/osebhaheme-etumah-357678199 | [GitHub](https://github.com)
-
+🔗 www.linkedin.com/in/osebhaheme-etumah-357678199 | [[GitHub](https://github.com)
+](https://github.com/Osebhaheme-18)
 ---
 
-*This project is part of a structured data analytics portfolio. All SQL queries were written from scratch and tested against the Chinook SQLite database.*
