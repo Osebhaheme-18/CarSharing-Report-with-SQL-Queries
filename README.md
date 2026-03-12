@@ -82,6 +82,8 @@ JOIN artists ar ON al.ArtistId = ar.ArtistId
 GROUP BY ar.Name
 ORDER BY Revenue DESC
 LIMIT 10;
+Result:
+ArtistUnits SoldRevenue ($)Iron Maiden140138.60U2107105.93Metallica9190.09Led Zeppelin8786.13Lost4181.59
 
 
 
