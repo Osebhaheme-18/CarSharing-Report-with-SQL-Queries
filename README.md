@@ -50,14 +50,21 @@ MonthlyRevenueTrend across the full date range
 The Chinook database follows a well-designed relational schema with clearly defined primary and foreign keys across 11 tables.
 Entity Relationship Diagram (ERD):
 [artists] ──< [albums] ──< [tracks] >── [genres]
+
                                   |         |
+                                  
                             [invoice_items]  [media_types]
+                            
                                   |
+                                  
                             [invoices] >── [customers] >── [employees]
+                            
 
 [playlists] >──< [playlist_track] >──< [tracks]
+
 Key Relationships:
-Parent TableChild TableForeign KeyRelationshipartistsalbumsArtistIdOne-to-ManyalbumstracksAlbumIdOne-to-ManygenrestracksGenreIdOne-to-Manymedia_typestracksMediaTypeIdOne-to-ManycustomersinvoicesCustomerIdOne-to-ManyemployeescustomersSupportRepIdOne-to-Manyinvoicesinvoice_itemsInvoiceIdOne-to-Manytracksinvoice_itemsTrackIdOne-to-Manyplaylistsplaylist_trackPlaylistIdMany-to-Manytracksplaylist_trackTrackIdMany-to-Many
+Parent Table    Child Table    Foreign Key    Relationship
+artists         albums          ArtistId      One-to-Many
 
 All relationships follow standard One-to-Many or Many-to-Many patterns with no circular dependencies.
 
