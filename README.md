@@ -358,8 +358,8 @@ Jane Peacock outperforms peers by $57–$113. Her approach could be documented a
 
 ## 👤 Author
 
-**Your Name**
-📧 youremail@example.com
+Osebhaheme Etumah
+📧 osebhahemee.etumah@gmail.com
 🔗 www.linkedin.com/in/osebhaheme-etumah-357678199 | [[GitHub](https://github.com)
 ](https://github.com/Osebhaheme-18)
 ---
