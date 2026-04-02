@@ -1,4 +1,4 @@
-# 🎵 Chinook Music Store — SQL Analysis Report
+# 🎵 Chinook Carsharing Report — SQL Analysis Report
 
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue?logo=sqlite)
 ![SQL](https://img.shields.io/badge/Language-SQL-orange)
